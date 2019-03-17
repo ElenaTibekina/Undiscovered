@@ -8,17 +8,21 @@ body {
 }
 header {
   position: relative;
-  z-index: 10000000;
+  z-index: 10;
 }
 p {
+  font-size: 18.4px;
+  font-size: 18.4px;
   font-size: 1.15rem;
 }
 .navbar {
   background: transparent !important;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .navbar.scrolled {
   background: rgba(8, 8, 8, 1);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .navbar-light .navbar-nav .active > .nav-link,
@@ -46,6 +50,8 @@ p {
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:visited {
   color: rgba(255, 255, 255, 1);
+  font-size: 40px;
+  font-size: 40px;
   font-size: 2.5rem;
   font-weight: 600;
 }
@@ -58,27 +64,29 @@ p {
   background-size: cover;
   margin-bottom: 0;
 }
-.banner::before,
-.sec2::before,
-.contact::before {
+.banner:before,
+.sec2:before,
+.contact:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 400px;
+  background: -webkit-linear-gradient(#000, transparent);
   background: linear-gradient(#000, transparent);
   pointer-events: none;
 }
-.banner::after,
-.sec2::after,
-.contact::after {
+.banner:after,
+.sec2:after,
+.contact:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 400px;
+  background: -webkit-linear-gradient(bottom, #000, transparent);
   background: linear-gradient(360deg, #000, transparent);
   pointer-events: none;
 }
@@ -91,9 +99,15 @@ p {
 .contentBox {
   position: relative;
   min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   z-index: 10;
 }
@@ -101,10 +115,14 @@ p {
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
+  font-size: 60.8px;
+  font-size: 60.8px;
   font-size: 3.8rem;
 }
 .contentBox p {
   color: #fff;
+  font-size: 20.8px;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 .sec1 {
@@ -115,6 +133,8 @@ p {
   color: #fff;
 }
 .headerText h2 {
+  font-size: 40px;
+  font-size: 40px;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
@@ -131,7 +151,8 @@ p {
   height: 100%;
 }
 .placeBox .imgBx img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -141,9 +162,15 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: baseline;
-  align-items: flex-end;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .placeBox .content h3 {
   position: relative;
@@ -170,6 +197,8 @@ p {
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
+  font-size: 72px;
+  font-size: 72px;
   font-size: 4.5rem;
 }
 .btnD1 {
@@ -178,6 +207,9 @@ p {
   background: #fff;
   border-radius: 50px;
   padding: 15px 50px;
+  font-size: 1.15 rem;
+  font-size: 1.15 rem;
+  font-size: 1.15 rem;
   font-size: 1.15 rem;
   outline: none;
   font-weight: 500;
@@ -200,7 +232,8 @@ p {
 .blogpost .imgBx img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blogpost .content {
   padding: 15px;
@@ -209,6 +242,8 @@ p {
   margin: 0;
   padding: 0 0 10px;
   font-weight: 600;
+  font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 .btnD2 {
@@ -223,7 +258,8 @@ p {
 }
 .btnD1:active,
 .btnD2:active {
-transform: translate(1px, 1px);
+-webkit-transform: translate(1px, 1px);
+        transform: translate(1px, 1px);
 }
 .contact {
   position: relative;
@@ -244,6 +280,8 @@ transform: translate(1px, 1px);
   border-radius: 0;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  font-size: 20px;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 .contact .form-control:focus,
@@ -257,6 +295,8 @@ transform: translate(1px, 1px);
 }
 .contact label {
   color: #fff;
+  font-size: 20px;
+  font-size: 20px;
   font-size: 1.25rem;
 }
 footer {
@@ -266,9 +306,15 @@ footer {
 .sci {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .sci li {
   list-style: none;
@@ -277,6 +323,7 @@ footer {
 .sci li a {
   color: #777;
   font-size: 2em;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .sci li a:hover {
@@ -296,8 +343,6 @@ footer {
     padding-right: 1rem;
     padding-left: 1rem;
   }
-}
-@media (max-width: 992px) {
   .navbar-light .navbar-toggler {
     background: #fff;
     border-radius: 0;
