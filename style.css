@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400");
 * {
-  outline: none !important;
+  outline: none;
   scroll-behavior: smooth;
 }
 body {
@@ -18,14 +18,14 @@ p {
   transition: 0.5s;
 }
 .navbar.scrolled {
-  background: rgba(8, 8, 8, 1) !important;
+  background: rgba(8, 8, 8, 1);
   transition: 0.5s;
 }
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #000 !important;
+  color: #000;
   background: rgba(255, 255, 255, 0.5);
 }
 .navbar-light .navbar-nav .active > .nav-link:hover {
@@ -221,6 +221,10 @@ p {
 .btnD2:hover {
   color: #576357;
 }
+.btnD1:active,
+.btnD2:active {
+transform: translate(1px, 1px);
+}
 .contact {
   position: relative;
   padding: 100px 0;
@@ -243,7 +247,7 @@ p {
   font-size: 1.25rem;
 }
 .contact .form-control:focus,
-contact .form-control:hover {
+.contact .form-control:hover {
   border: none;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: none;
